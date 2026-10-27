@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediFind — Medicine Availability</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MediFind</h1>
+    <p>Find essential medicines at nearby pharmacies.</p>
+  </header>
+
+  <main>
+    <section class="search-card">
+      <h2>Find a Medicine</h2>
+      <div class="search-row">
+        <input id="medicine" placeholder="Try paracetamol, azithromycin..." />
+        <button onclick="searchMedicine()">Search</button>
+      </div>
+      <p class="hint">Demo inventory is provided for the hackathon prototype.</p>
+    </section>
+
+    <section>
+      <h2>Nearby Availability</h2>
+      <div id="results" class="results"></div>
+    </section>
+  </main>
+
+  <footer>MediFind • Hack for Social Cause • Verify medicine availability with the pharmacy.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
